@@ -1,0 +1,4 @@
+#!/bin/sh
+RNUM=$(((RANDOM%1185)+1))
+ICON=$(cat icons/$RNUM.txt)
+echo $(cat "$1") "$ICON" > "$1"
